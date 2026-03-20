@@ -1,4 +1,4 @@
-public class A4_class {
+public class A7_class {
     public static void main(String[] args) {
 
         int a = 2, b = 5, c = 10;
