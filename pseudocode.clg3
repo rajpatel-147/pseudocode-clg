@@ -1,4 +1,4 @@
-public class A7_class_func {
+public class A3_class_func {
     static void simp(int p, double r, double t) {
         double si;
         si = (p * r * t) / 100;
