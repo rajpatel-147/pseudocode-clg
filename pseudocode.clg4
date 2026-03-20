@@ -1,0 +1,32 @@
+//  PROCEDURE DOESN'T RETURN ANY THING
+// FUNCTION RETURN VALUE
+public class A6_class_function {
+
+    // PROCEDURE
+    static void ADD(int x, int y) {
+        System.out.println(x + y);
+    }
+
+    // FUNCTION
+    static int ADD1(int x, int y) {
+        return x+y;
+    }
+
+    public static void main(String[] args) {
+        ADD(2, 3);
+        /*
+        PROCEDURE ADD (x : INTEGER , y INTEGER)
+        PRINT x+y
+          END PROCEDURE
+           CALL  ADD (2,3)
+         */
+
+        System.out.println(ADD1(2,3));
+        /*
+        FUNCTION  ADD (x : INTEGER , y INTEGER)
+        RETURN x+y;
+          END FUNCTION
+           PRINT  ADD (2,3)
+         */
+    }
+}
