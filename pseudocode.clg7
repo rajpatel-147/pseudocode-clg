@@ -1,0 +1,98 @@
+public class A4_class {
+    public static void main(String[] args) {
+
+        int a = 2, b = 5, c = 10;
+                for (c = 3; c <= 6; c++) {
+                    a = (a + a) + a;
+                    a = (a ^ 11) + c;
+                }
+                b = (9 + 7) + a;
+                System.out.println(a + b);
+
+
+         /*
+          INTEGER a,b,c
+        SET a=2,b=5,c=10
+       FOR( EACH c FROM 3 T0 6)
+       a=(a+a) +a
+       a=(a^11)+c
+       END FOR
+       b=(9+7) +a
+       print (a+b)
+          */
+
+
+
+        int a1 = 10, b1 = 16, c1 = 3;
+        if (a1 > b1) {
+            a1 = 2 * b1;
+        } else if (c1 > b1) {
+            c1 = c1 * b1;
+        } else {
+            b1 = c1 / 2;
+        }
+
+        System.out.println(a1 + b1 + c1);
+         /*
+          INTEGER a1,b1,c1
+         SET a=10,b=16,c=3
+       IF(a1>b1)
+        a1 = 2 * b2
+        ELSE IF (c1 > b1)
+         c1 = c1*b1
+         ELSE
+         b1 = c1/2
+         END IF
+         PRINT a1+b1+c1
+         */
+
+
+        int p = 0, q = 2, r = 9;
+        r = 7 + p;
+        q = q + r;
+        for (r = 4; r <= 7; r++) {
+            p = (p + p) & q;
+            if ((p + q) < (r - p) || (8 < p)) {
+                p = (p + 2) + q;
+                break;
+            }}
+        System.out.println(p + q + r);
+
+        /*
+        INTEGER  p q r
+        SET p=0, q=2, r=9
+        r=7+p
+        q=q+r
+        FOR(EACH r FROM 4 to 7)
+          p= (p+p)&q
+          IF (p+q) < ( (r-p) ||8<p)
+          p = (p+2)+q
+          JUMP OUT TO THE LOOP
+          END IF
+          PRINT p+q+r
+         */
+        int p1 = 7, q1 = 10, r1 = 9;
+        for (r1 = 3; r1 <= 4; r1++) {
+            p1 = q1;
+            if ((q1 - p1 + r1) < (r1 + q1)) {
+                continue;
+            } else {
+                p1 = (5 + 6) ^ r1;
+                break; }
+        }
+        System.out.println(p1 + q1);
+        /*
+        INTEGER  p q r
+        SET p1=7, q1=10, r1=9
+         FOR(EACH r1 FROM 3 to 4)
+       p1=q1
+       IF ((q1-p1+r1) < (r1+q1)
+       CONTINUE
+       ELSE  JUMP OUT TO THE LOOP
+       END IF
+       p1 = (5+6) ^ r1
+       END FOR
+       PRINT p1+q1
+                */
+     }
+}
