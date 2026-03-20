@@ -1,0 +1,259 @@
+import java.util.*;
+public class A5_class_Array {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int[] a = new int[5];
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Enter element " + i + ": ");
+            a[i] = sc.nextInt();
+        }
+        System.out.println("Array elements are:");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(a[i]);}
+        /*
+        DECLARE a ARRAY : ARRAY[0:4] OF INTEGER
+        FOR i TO 4
+        READ a[i]
+        END FOR
+        FOR i TO  4
+         PRINT a[i]
+               END FOR
+         */
+
+
+        // SUM OF AARAY
+        Scanner sc1 = new Scanner(System.in);
+        int[] b = new int[7];
+        int sum = 0;
+        for (int i = 0; i <= 4; i++) {
+            System.out.print("Enter element " + i + ": ");
+            b[i] = sc1.nextInt();
+        }
+        for (int i = 0; i <= 4; i++) {
+            sum = sum + b[i];
+        }
+
+        // Output sum
+        System.out.println("Sum = " + sum);
+
+         /*
+        DECLARE b ARRAY : ARRAY[0:6] OF INTEGER
+        INTEGER SUM ;
+        SET SUM = 0;
+        FOR i TO 4
+        READ b[i]
+        END FOR
+        FOR i TO  4
+        SUM = SUM + b[i]
+               END FOR
+               PRINT SUM;
+         */
+
+//        MAX OF ARRAY
+         /*
+        DECLARE b ARRAY : ARRAY[0:6] OF INTEGER
+       DECLARE INTEGER MAX
+        FOR i TO 6
+        READ c[i]
+        END FOR
+        SET MAX =0;
+        FOR i TO  6
+        IF c[i] > max
+            max = c[i]
+            END IF
+               END FOR
+               PRINT max
+         */
+
+        int[] c = new int[7];
+        for (int i = 0; i <= 6; i++) {
+            System.out.print("Enter element " + i + ": ");
+            c[i] = sc.nextInt();
+        }
+        int max = c[0];
+        for (int i = 1; i <= 6; i++) {
+            if (c[i] > max) {
+                max = c[i];
+            }
+        }
+        System.out.println("Maximum = " + max);
+
+           // MIN Function is also same just we have to check the condition
+
+        //   2D  ARRAY
+
+
+        int[][] X = new int[2][2]; // 2x2 array
+
+        // Input loop
+        for (int r = 0; r < 2; r++) {
+            for (int c1 = 0; c1 < 2; c1++) {
+                System.out.print("Enter element [" + r + "][" + c1 + "]: ");
+                X[r][c1] = sc.nextInt();
+            } }
+        System.out.println("Matrix elements are:");
+        for (int r = 0; r < 2; r++) {
+            for (int c1 = 0; c1 < 2; c1++) {
+                System.out.print(X[r][c1] + " ");
+            }
+            System.out.println();
+        }
+        /*
+        DECLARE X : ARRAY[2][2]
+        FOR r = 0 TO 1
+          FOR C = 0 TO 1
+           READ X[r][c]
+           END FOR
+             END FOR
+
+              FOR r = 0 TO 1
+          FOR C = 0 TO 1
+             PRINT x[r][c]
+             END FOR
+             END FOR
+         */
+
+            //SUM OF 2D Array
+
+        int[][] x2 = new int[2][4];
+        for (int r2 = 0; r2 < 2; r2++) {
+            for (int c2 = 0; c2 < 4; c2++) {
+                x2[r2][c2] = sc.nextInt();
+            } }
+        int sum2 = 0;
+        for (int r2 = 0; r2 < 2; r2++) {
+            for (int c2 = 0; c2 < 4; c2++) {
+                sum2 += x2[r2][c2];
+            }
+        }
+
+        // Print result
+        System.out.println("Sum of all elements = " + sum);
+
+
+
+         /*
+        DECLARE x2 : ARRAY[2][4]
+        FOR r2 = 0 TO 1
+          FOR c2 = 0 TO 3
+           READ X[r2][c2]
+           END FOR
+             END FOR
+       DECLARE sum x : INTEGER
+       SET sum =0;
+              FOR r2 = 0 TO 1
+          FOR c2 = 0 TO 3
+             sum = sum +  x2[r2][c2]
+             END FOR
+             END FOR
+             PRINT sum;
+         */
+
+        System.out.println("COUNTING OF ODD AND EVEN");
+        int[][] x3 = new int[3][3];
+        int even = 0;
+        int odd = 0;
+        for (int r3 = 0; r3 < 3; r3++) {
+            for (int c3 = 0; c3 < 3; c3++) {
+                x3[r3][c3] = sc.nextInt();
+            }}
+        for (int r3 = 0; r3 < 3; r3++) {
+            for (int c3 = 0; c3 < 3; c3++) {
+                if (x3[r3][c3] % 2 == 0) {
+                    even++;
+                } else {
+                    odd++;
+                }
+            }}
+        System.out.println("Even numbers: " + even);
+        System.out.println("Odd numbers: " + odd);
+
+
+        // ADDITION OF TWO MATRIX
+         /*
+        DECLARE x3 : ARRAY[3][3]
+        FOR r3 = 0 TO 2
+          FOR c3 = 0 TO 2
+           READ x3[r2][c2]
+           END FOR
+             END FOR
+       DECLARE even : INTEGER
+       DECLARE odd : INTEGER
+       SET odd =0;
+       SET even =0;
+
+              FOR r3 = 0 TO 2
+          FOR c3 = 0 TO 2
+             IF x3[r3][c3] MOD 2 == 0
+                 INCREMENT even
+            ELSE
+                 INCREMENT even
+            END IF
+           END FOR
+             END FOR
+             PRINT even;
+             PRINT odd;
+         */
+        System.out.println("SUM OF TWO 2D ARRAY IN NEW ARRAY IN NEW 2D ARRAY");
+
+        int[][] x4 = new int[3][3];
+        int[][] y4 = new int[3][3];
+        int[][] z4 = new int[3][3];
+
+        System.out.println("Enter elements of first matrix:");
+        for (int r4 = 0; r4 < 3; r4++) {
+            for (int c4 = 0; c4 < 3; c4++) {
+                x4[r4][c4] = sc.nextInt();
+            }
+        }
+        System.out.println("Enter elements of second matrix:");
+        for (int r4 = 0; r4 < 3; r4++) {
+            for (int c4 = 0; c4 < 3; c4++) {
+                y4[r4][c4] = sc.nextInt();
+            }
+        }
+        for (int r4 = 0; r4 < 3; r4++) {
+            for (int c4 = 0; c4 < 3; c4++) {
+                z4[r4][c4] = y4[r4][c4] + x4[r4][c4];
+            }
+        }
+        System.out.println("Result matrix:");
+        for (int r4 = 0; r4 < 3; r4++) {
+            for (int c4 = 0; c4 < 3; c4++) {
+                System.out.print(z4[r4][c4] + " ");
+            }
+            System.out.println();
+        }
+
+
+        // SUM OF TWO 2D ARRAY IN NEW ARRAY IN NEW 2D ARRAY
+
+         /*
+        DECLARE x4 : ARRAY[3][3]
+        DECLARE y4 : ARRAY[3][3]
+        DECLARE z4 : ARRAY[3][3]
+        FOR r4 = 0 TO 2
+          FOR c4 = 0 TO 2
+           READ x3[r4][c4]
+           END FOR
+             END FOR
+
+              FOR r3 = 0 TO 2
+          FOR c3 = 0 TO 2
+            z4[r4][c4] =  y4[r4][c4] + x4[r4][c4]
+           END FOR
+             END FOR
+
+             FOR r3 = 0 TO 2
+          FOR c3 = 0 TO 2
+          PRINT z4[r4][c4]
+           END FOR
+             END FOR
+          */
+
+
+
+
+    }
+}
