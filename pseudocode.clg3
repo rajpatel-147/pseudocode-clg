@@ -1,0 +1,53 @@
+public class A7_class_func {
+    static void simp(int p, double r, double t) {
+        double si;
+        si = (p * r * t) / 100;
+        System.out.println(si);
+    }
+
+
+    // 2nd function
+    static int FUNC(int a, int b, int c) {
+        for (c = 4; c <= 8; c++) {
+            a = (a + 11) + b;
+        }
+        b = (5 + 10) + a;
+        a = (10 + 8) + a;
+        for (c = 2; c <= 5; c++) {
+            a = (10 + 2) & a;
+            b = (3 + 4) + a;
+        }
+        return a + b;
+    }
+    public static void main(String[] args) {
+        simp(1000, 4.5, 10);
+        /*
+        PROCEDURE simp(p:INTEGER , r:REAL, t : REAL)
+        DECLARE si : REAL
+        si := (p+r+t)/100;
+        PRINT si
+        END PROCEDURE
+        CALL simp(1000,4.5,10)
+        DECLARE p = INTEGER
+        DECLARE r = REAL
+        DECLARE t = REAL
+         */
+        int a = 5, b = 9, c = 2;
+        System.out.println(FUNC(a, b, c));
+        /*
+        a=5,b=9,c=2
+        INTEGER FUNC(INTEGER a ,INTEGER b ,INTEGER c )
+        FOR(EACH C FROM 4 TO 8)
+        a  = (a+11) + b;
+        END FOR
+        b=(5+10)+a
+        a = (10+8)+a
+        FOR(EACH C FROM 2 TO 5)
+        a= (10+2) & a
+        b= (3+4)+a
+        END FOR
+        RETURN a+b
+        END FUNC
+         */
+    }
+}
