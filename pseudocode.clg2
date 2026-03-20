@@ -1,0 +1,21 @@
+import  java.util.*;
+public class A8_new {
+    public static int sample(int n){
+        int s = 0;
+        int i = 0;
+        while(n > 0){
+            int r = n % 10;
+            int p = 8 ^ 1;   // XOR, not power
+            s += p * r;
+            n=n/10;
+            i++;
+            // missing: n = n / 10;
+        }
+        return s;
+    }
+
+    public static void main(String[] args) {
+        int m = 127;
+        System.out.println(sample(m));
+    }
+}
