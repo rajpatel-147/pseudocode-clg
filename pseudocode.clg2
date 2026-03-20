@@ -1,5 +1,5 @@
 import  java.util.*;
-public class A8_new {
+public class A2_new {
     public static int sample(int n){
         int s = 0;
         int i = 0;
