@@ -1,0 +1,123 @@
+public class A10_class {
+
+    /*
+    FUNCTION sum( n: INTEGER) : INTEGER
+    DECLARE s : INTEGER
+    SET s=0
+    FOR i:= 1 TO n
+       s= s+i;
+       END FOR
+       RETURN s
+       END FUNCTION
+       PRINT sum(s)
+     */
+    public static int sum(int n) {
+        int s = 0;
+        for (int i = 1; i <= n; i++) {
+            s = s + i;
+        }
+        return s;
+    }
+
+    /*
+    FUNCTION sum( n: REAL) : REAL
+    DECLARE s : REAL
+    SET s=0
+    FOR i:= 1 TO n
+       s= s+1/n;
+       END FOR
+       RETURN s
+       END FUNCTION
+       PRINT sum(n)
+     */
+
+    public static double sum2(int n) {
+        double s = 0.0;
+        for (int i = 1; i <= n; i++) {
+            s = s + (1.0 / n);
+        }
+        return s;
+    }
+
+    // reverse no.
+    /*
+     FUNCTION reverse( n: INTEGER) : INTEGER
+    DECLARE a : INTEGER
+    DECLARE b : INTEGER
+    SET s=0
+    WHILE n>0
+      a= n MOD 10
+      n  = n / 10
+      b = b * 10 + a;
+      END WHILE
+       RETURN b
+       END  reverse
+       PRINT reverse(12345)     */
+
+    public static int reverse(int n) {
+        int a, b = 0;
+        while (n > 0) {
+            a = n % 10;
+            n = n / 10;
+            b = b * 10 + a;
+        }
+        return b;
+    }
+
+    // CHECK PALINDROME
+    /*
+    FUNCTION palindrome( n2  : INTEGER) : INTEGER
+    DECLARE a1 : INTEGER
+    DECLARE b1 : INTEGER
+    SET s=0
+    WHILE n2>0
+      a= n2 MOD 10
+      n  = n2 / 10
+      b = b * 10 + a;
+      END WHILE
+       RETURN b
+       END  palindrome
+       IF(B== n2)
+        PRINT "YES"
+        ELSE
+        PRINT "NO"
+        END IF
+       PRINT palindrome(12121)
+     */
+    public static int palindrome(int n2) {
+        int a, b = 0;
+        while (n2 > 0) {
+            a = n2 % 10;
+            n2 = n2 / 10;
+            b = b * 10 + a;
+        }
+        return b;
+    }
+    public static void main(String[] args) {
+        // sum of series
+        int result = sum(5);
+        System.out.println( result);
+
+        // sum of 1+1/n..... series
+            int n1 = 15;  // example input
+            double result2 = sum2(n1);
+            System.out.println(result2);
+
+            // revser no.
+        int num = 12345;
+        int result3 = reverse(num);
+        System.out.println(result3);
+
+        // palindrome
+        int num3 = 12121;
+        int pali = palindrome(num3);
+
+        if (pali == num3) {
+            System.out.println("yes");
+        } else {
+            System.out.println("no");
+
+
+        }
+    }
+}
