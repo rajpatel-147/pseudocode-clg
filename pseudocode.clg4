@@ -1,6 +1,6 @@
 //  PROCEDURE DOESN'T RETURN ANY THING
 // FUNCTION RETURN VALUE
-public class A6_class_function {
+public class A4_class_function {
 
     // PROCEDURE
     static void ADD(int x, int y) {
