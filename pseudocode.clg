@@ -1,0 +1,56 @@
+public class A1_class { /*
+        PROCEDURE cube (a:INTEGER)
+        DECLARE cube  REAL
+        cube = a*a*a
+        PRINT cube
+        END PROCEDURE
+        CALL cube(5)
+         */
+    public static void cube(int a) {
+        double cube = a * a * a;
+        System.out.println(cube);
+    }
+
+    /*
+    PROCEDURE triangle (a:INTEGER , b:INTEGER)
+        DECLARE Area REAL
+        Area = 1/2*a*b;
+        PRINT area
+        END PROCEDURE
+        CALL triangle (5,9)
+     */
+    public static void triangle(int a, int b) {
+    double area = 0.5 * a * b;
+        System.out.println(area);   }
+
+    /*
+  PROCEDURE findmax (:INTEGER , b:INTEGER)
+      DECLARE max REAL
+     IF(a>b)
+            PRINT a
+         ELSE
+             PRINT b
+             END IF
+      END PROCEDURE
+      CALL  findmax(5,90)
+   */
+    public static void findmax(int a, int b) {
+        int max;
+        if (a > b) {
+            max = a;
+        } else {
+            max = b;
+        }
+        System.out.println(max);
+    }
+    public static void main(String[] args) {
+         // CUBE
+              cube(5);
+         // Triangle
+        triangle(5, 9);
+     // find max
+        findmax(5, 90);
+
+
+    }
+}
